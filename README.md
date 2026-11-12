@@ -69,16 +69,16 @@ Transparency
 
 Clean separation between source and analytics layers
 
-SQL scripts are organized and versioned in the /SQL folder:
+SQL scripts are organized and versioned in the AdventureWorks_Sales_BI_Project/SQL folder:
 
 SQL/
 ├── 01_Source_Exploration.sql
-├── 02_Fact_Sales.sql
-├── 03_Dim_Product.sql
-├── 04_Dim_Customer.sql
-├── 05_Dim_Geography.sql
-├── 06_Fact_Sales_Simulated.sql
-├── 07_Validation_Checks.sql
+├── 02_vw_FactSales.sql
+├── 03_vw_Dimproduct.sql
+├── 04_vw_DimCustomer.sql
+├── 05_vw_DimGeography.sql
+├── 06_Simulated_vw_FactSales_Simulated.sql
+└── 07_Validation_Checks.sql
 
 📈 Power BI Dashboard Design
 Page 1 – Executive Dashboard
@@ -146,9 +146,7 @@ Executive dashboard design principles
 AdventureWorks_Sales_BI_Project/
 │
 ├── SQL/            # SQL ETL and modeling scripts
-├── PowerBI/        # Power BI (.pbix) file
-├── Documentation/  # Project notes & explanations
-└── Assets/         # Dashboard screenshots
+└── PowerBi/        # Power BI project (Sales.pbip: report and semantic model)
 
 🧑‍💼 Intended Audience
 
@@ -179,3 +177,7 @@ It is suitable as a portfolio project, interview discussion piece, or internal B
 Author: Fazel Emami
 Tools: SQL Server, SSMS, Power BI
 Focus: Sales Performance & Customer Risk Analytics
+
+📄 License
+
+MIT. See LICENSE.
